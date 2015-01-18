@@ -56,6 +56,8 @@ print "Lowest Payment: %s" % (run(balance, annualInterestRate))
 
 #### 3rd Appraoch:
 
+balance = 999999
+annualInterestRate = 0.18
 monthlyInterestRate = annualInterestRate/12.0
 high = (balance * (1 + monthlyInterestRate)**12)/12.0
 low = balance/12
