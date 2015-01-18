@@ -25,3 +25,21 @@ for i in range(len(s)):
     if s[i:].startswith('bob'):
         countBob += 1
 print("Number of times bob occurs is: ") + str(countBob)
+
+
+
+#### Third Approach:
+
+s = 'azcbobobegghaklbobbobjfuboboo'
+sub = 'bob'
+def find(s, sub):
+    counter = start = 0
+    while True:
+        start = s.find(sub, start) + 1
+        if start > 0:
+            counter+=1
+        else:
+            return counter
+print find(s,'bob');
+
+
