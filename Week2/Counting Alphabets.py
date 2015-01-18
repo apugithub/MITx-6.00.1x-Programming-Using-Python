@@ -19,3 +19,13 @@ for vowel in word:
     if vowel == "a" or vowel == "e" or vowel == "i" or vowel == "o" or vowel == "u":
         numVowel += 1
 print("Number of vowels: " + str(numVowel))
+
+
+### Third approach:
+
+s = 'azcbobobegghaklbobbobjfuboboo'
+counter = 0;
+counter = s.count('a') + s.count('e') +s.count('i') +s.count('o') +s.count('u');
+print counter;
+
+
