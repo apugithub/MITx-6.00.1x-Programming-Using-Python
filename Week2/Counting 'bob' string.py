@@ -1,3 +1,5 @@
+### First programe:
+
 s = 'azcbobobegghaklbobbobjfuboboo'
 def counting_bobs(s):
     pattern = 'bob'
@@ -11,3 +13,15 @@ def counting_bobs(s):
     return counter
 print ("Number of times bob occurs is:"),
 print  counting_bobs(s)
+
+
+
+#### Second programe:
+
+s = 'azcbobobegghaklbobbobjfuboboo'
+countBob = 0
+print countBob
+for i in range(len(s)):
+    if s[i:].startswith('bob'):
+        countBob += 1
+print("Number of times bob occurs is: ") + str(countBob)
